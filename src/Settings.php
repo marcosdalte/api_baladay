@@ -15,9 +15,9 @@ class Settings {
                     'addContentLengthHeader' => false,
                     ],
                     'authentication' => [
-                        'keyword' => 'Baladay',
-                        'api_key' => 'sKpDMwwP9ngBf7I4',
-                        'api_secret' => 'RNe9NiCec3ENMe4q7KJkwm52',
+                        'keyword' => 'keyword',
+                        'api_key' => 'api_key',
+                        'api_secret' => 'api_secret',
                     ],
                     'single' => 'single',
                     );
