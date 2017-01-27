@@ -1,0 +1,55 @@
+// $app->get('/[{evento}]', function ($request, $response, $args) {
+    // Sample log message
+    // $this->logger->info("Slim-Skeleton '/' route");
+    // Render index view
+    // echo "gdskjfgkajsgdfksdg";
+    // return $this->renderer->render($response, 'index.phtml', $args);
+// });
+
+// $response->getBody()->write("Hello, $cidade, $evento");
+    // echo "</br>\n";
+    // echo $authenticationSettings = $this->get('settings')['authentication']['api_key'];
+    // echo "</br>\n";
+    // echo $authenticationSettings = $this->get('settings')['authentication']['api_secret'];
+    
+        // $this->logger->addInfo("Ticket list");
+    // $this->logger->info("Slim-Skeleton '/' route");
+    // return 
+    // $this->response->withJson($data);
+    // return $response->withStatus(302);
+    // return $this->response->withJson([]);
+    
+    
+     
+    //  $settings = new Settings();
+    // $conf = $settings->getConf();
+    // var_dump($conf['authentication']['api_key']);
+
+
+        // public function __construct() {
+            
+            // return [
+                // 'settings' => [
+                    // 'displayErrorDetails' => true, // set to false in production
+                    // 'addContentLengthHeader' => false, // Allow the web server to send the content-length header
+                    // Renderer settings
+                    // 'renderer' => [
+                    //     'template_path' => __DIR__ . '/../templates/',
+                    // ],
+                    // // Monolog settings
+                    // 'logger' => [
+                    //     'name' => 'slim-app',
+                    //     'path' => __DIR__ . '/../logs/app.log',
+                    //     // 'level' => \Monolog\Logger::DEBUG,
+                    // ],
+                    // // Authentication
+                    // 'authentication' => [
+                    //     'api_key' => 'sKpDMwwP9ngBf7I4',
+                    //     'api_secret' => 'RNe9NiCec3ENMe4q7KJkwm52',
+                    // ],
+                // ],
+            // ];
+            // return 0;
+        // }
+    // }
+// }
