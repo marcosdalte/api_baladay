@@ -11,9 +11,13 @@ $container['renderer'] = function ($c) {
 
 // monolog
 $container['logger'] = function ($c) {
-    $settings = $c->get('settings')['logger'];
-    $logger = new Monolog\Logger($settings['name']);
+    $conf = new Settings;
+    $name = $conf->getConfValue("name");
+    $path = $conf->getConfValue("path");
+    $level = $conf->getConfValue("level");
+    
+    $logger = new Monolog\Logger($name);
     $logger->pushProcessor(new Monolog\Processor\UidProcessor());
-    $logger->pushHandler(new Monolog\Handler\StreamHandler($settings['path'], $settings['level']));
+    $logger->pushHandler(new Monolog\Handler\StreamHandler($path, $level));
     return $logger;
 };

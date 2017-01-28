@@ -16,5 +16,4 @@ require __DIR__ . '/../src/auth.php';
 
 // Register routes
 require __DIR__ . '/../src/routes.php';
-
 $app->run();

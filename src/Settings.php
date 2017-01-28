@@ -19,8 +19,12 @@ class Settings {
                         'api_key' => 'api_key',
                         'api_secret' => 'api_secret',
                     ],
-                    'single' => 'single',
-                    );
+                    'logger'  => [
+                        'name' => 'api-baladay',
+                        'path' => __DIR__ . '/../logs/app.log',
+                        'level' => \Monolog\Logger::DEBUG,
+                    ],
+                );
         return $this;
     }
     
@@ -43,6 +47,5 @@ class Settings {
         }
         return null;   
     }
-        
 }
 

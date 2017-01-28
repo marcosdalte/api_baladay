@@ -18,7 +18,7 @@ class auth {
     
     public function verify($header){
         $signature = $this->create_signature();
-
+    echo $signature;
         if (!strcmp(str_replace(' ', '',$header),$signature)){
             return true;
         }else{
