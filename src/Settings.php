@@ -24,6 +24,12 @@ class Settings {
                         'path' => __DIR__ . '/../logs/app.log',
                         'level' => \Monolog\Logger::DEBUG,
                     ],
+                    "db" => [
+                        "host" => "localhost",
+                        "dbname" => "baladay",
+                        "user" => "root",
+                        "pass" => ""
+                    ],
                 );
         return $this;
     }
