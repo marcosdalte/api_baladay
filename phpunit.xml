@@ -1,7 +1,8 @@
-<phpunit bootstrap="vendor/autoload.php">
+<phpunit bootstrap="vendor/autoload.php" colors="true">
     <testsuites>
-        <testsuite name="SlimSkeleton">
+        <testsuite name="ApiBaladay">
             <directory>tests</directory>
+            <exclude>vendor</exclude>
         </testsuite>
     </testsuites>
 </phpunit>
