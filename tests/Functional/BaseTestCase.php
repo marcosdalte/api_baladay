@@ -22,7 +22,6 @@ class BaseTestCase extends \PHPUnit_Framework_TestCase {
         
         $request = Request::createFromEnvironment($environment);
         if (isset($requestData)) {
-            // $request = $request->withParsedBody($requestData);
             $request = $request->withHeader('AUTHORIZATION', $requestData);
         }
         $response = new Response();
