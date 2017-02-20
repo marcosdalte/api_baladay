@@ -7,7 +7,8 @@ service:
 install:
   - composer install
 before_install:
-  - mysql -e 'CREATE DATABASE baladay;'  
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS baladay;'  
+  - mysql < scripts/bd.sql
 script:
   - vendor/bin/phpunit
 notifications:
