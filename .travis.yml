@@ -5,7 +5,7 @@ php:
 service:
   - mysql
 install:
-  - mysql -u root < scripts/bd.sql
+  - mysql -e < scripts/bd.sql
   - composer install
 script:
   - vendor/bin/phpunit
