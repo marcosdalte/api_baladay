@@ -5,8 +5,9 @@ php:
 service:
   - mysql
 install:
-  - mysql -e < scripts/bd.sql
   - composer install
+before_install:
+  - mysql -e 'CREATE DATABASE baladay;'  
 script:
   - vendor/bin/phpunit
 notifications:
