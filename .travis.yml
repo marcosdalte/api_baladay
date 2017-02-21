@@ -8,7 +8,7 @@ install:
   - composer install
 before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS baladay;'  
-  - mysql -u root -p --default-character-set=utf8 --result-file=scripts/bd.sql baladay
+  - mysql -u root -p --default-character-set=utf8 baladay < scripts/bd.sql
 script:
   - vendor/bin/phpunit
 notifications:
