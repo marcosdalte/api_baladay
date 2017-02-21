@@ -7,7 +7,7 @@ service:
 install:
   - composer install
 before_install:
-  - mysql -e scripts/bd.sql
+  - mysql -u root -e scripts/bd.sql
 script:
   - vendor/bin/phpunit
 notifications:
